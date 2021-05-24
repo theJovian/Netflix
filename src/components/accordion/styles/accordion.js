@@ -13,10 +13,6 @@ export const Inner = styled.div`
     margin: auto;
 `
 
-export const Frame = styled.div`
-    margin-bottom: 40px;
-`
-
 export const Title = styled.h1`
     font-size: 50px;
     line-height: 1.1;
@@ -33,7 +29,9 @@ export const Title = styled.h1`
 export const Item = styled.div`
     color: white;
     margin-bottom: 10px;
-    max-width: 670px;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
 
     &:first-of-type{
         margin-top: 3em;
