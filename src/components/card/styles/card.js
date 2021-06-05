@@ -30,10 +30,10 @@ export const Group = styled.div`
 	display: flex;
 	flex-direction: ${({ flexDirection }) =>
 		flexDirection === 'row' ? 'row' : 'column'};
-	${({ alignItems }) => alignItems && `align-items: ${alignItems}`}
-	${({ margin }) => margin && `margin: ${margin}`}
+	${({ alignItems }) => alignItems && `align-items: ${alignItems}`};
+	${({ margin }) => margin && `margin: ${margin}`};
 
-    > ${Container}:first-of-type {
+	> ${Container}:first-of-type {
 		@media (min-width: 1100px) {
 			margin-top: -150px;
 		}
@@ -147,7 +147,7 @@ export const Meta = styled.div`
 	position: absolute;
 	bottom: 0;
 	padding: 10px;
-	background-color: #00000008f;
+	background-color: #0000008f;
 `;
 
 export const Entities = styled.div`
@@ -169,7 +169,7 @@ export const Item = styled.div`
 	}
 
 	@media (min-width: 1200px) {
-		&:hover ${Meta}, $:hover ${Text}, $:hover ${Subtitle} {
+		&:hover ${Meta}, &:hover ${Text}, &:hover ${Subtitle} {
 			display: block;
 			z-index: 100;
 		}
